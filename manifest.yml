@@ -1,14 +1,11 @@
----
-# This manifest deploys a Python Flask application with a Redis database
 applications:
-- name: nyu-lab-bluemix
+- path: .
   memory: 64M
   instances: 2
-  #random-route: true
-  host: nyu-lab-bluemix
   domain: mybluemix.net
-  path: .
+  name: nyu-devops-jrod
+  host: nyu-devops-jrod
   disk_quota: 512M
   buildpack: python_buildpack
-  services:
-  - RedisCloud
+  # services:
+  # - RedisCloud
